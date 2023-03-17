@@ -16,32 +16,32 @@ public class slotChangeWeapon : MonoBehaviour
 
     public Sprite[] _iconSlot;
 
-    //меч
+    //sword
     public Sprite[] _iconSwordTop;
     public Sprite[] _iconSwordMid;
     public Sprite[] _iconSwordDown;
 
-    //дагер
+    //dagger
     public Sprite[] _iconDaggerTop;
     public Sprite[] _iconDaggerMid;
     public Sprite[] _iconDaggerDown;
 
-    //саи
+    //sai
     public Sprite[] _iconSaiTop;
     public Sprite[] _iconSaiMid;
     public Sprite[] _iconSaiDown;
 
-    //копьё
+    //spear
     public Sprite[] _iconSpearTop;
     public Sprite[] _iconSpearMid;
     public Sprite[] _iconSpearDown;
 
-    //молот
+    //hammer
     public Sprite[] _iconHammerTop;
     public Sprite[] _iconHammerMid;
     public Sprite[] _iconHammerDown;
 
-    //булава
+    //mace
     public Sprite[] _iconMaceTop;
     public Sprite[] _iconMaceMid;
     public Sprite[] _iconMaceDown;

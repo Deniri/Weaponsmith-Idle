@@ -28,13 +28,13 @@ public class panelIngot : MonoBehaviour
     void FixedUpdate()
     {
 
-        //отоброжение уровня
+        //level display
         textIncome.text = $"<sprite=2>{playerManager.Reduction_0(playerManager.incomeIngot[number])}";
         textLevel.text = $"Level: {playerManager.levelIngot[number]}";
 
         textCost.text = $"<sprite=1>{playerManager.Reduction_0(playerManager.CostIngot[number])}";
 
-        //отображение бара
+        //bar display
         scaleBar.x = (float)(1d / playerManager.BarMaxIngot[number] * playerManager.BarIngot[number]);
         if (scaleBar.x > 1f)
             scaleBar.x = 1f;

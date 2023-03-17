@@ -81,7 +81,7 @@ public class buttonBuyWeapon : MonoBehaviour
             playerManager.ingot -= playerManager.CostWeapon[number];
             playerManager.levelWeapon[number] += playerManager.XBuyWeapon[number];
 
-            //квест 5
+            //quest 5
             if (playerManager.questOn[5] > 0 && playerManager.questLevel[5] < playerManager.questLevelMax[5])
             {
                 playerManager.questProgress[5] += playerManager.XBuyWeapon[number];

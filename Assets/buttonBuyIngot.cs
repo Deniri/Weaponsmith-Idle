@@ -81,7 +81,7 @@ public class buttonBuyIngot : MonoBehaviour
             playerManager.ore -= playerManager.CostIngot[number];
             playerManager.levelIngot[number] += playerManager.XBuyIngot[number];
 
-            //квест 4
+            //quest 4
             if (playerManager.questOn[4] > 0 && playerManager.questLevel[4] < playerManager.questLevelMax[4])
             {
                 playerManager.questProgress[4] += playerManager.XBuyIngot[number];

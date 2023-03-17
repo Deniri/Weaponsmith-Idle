@@ -81,7 +81,7 @@ public class ButtonBuyOre : MonoBehaviour
             playerManager.money -= playerManager.CostOre[number];
             playerManager.levelOre[number] += playerManager.XBuyOre[number];
 
-            //квест 3
+            //quest 3
             if (playerManager.questOn[3] > 0 && playerManager.questLevel[3] < playerManager.questLevelMax[3])
             {
                 playerManager.questProgress[3] += playerManager.XBuyOre[number];

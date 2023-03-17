@@ -28,13 +28,13 @@ public class panelWeapon : MonoBehaviour
     void FixedUpdate()
     {
 
-        //отоброжение уровня
+        //level display
         textIncome.text = $"<sprite=0>{playerManager.Reduction_0(playerManager.incomeWeapon[number])}";
         textLevel.text = $"Level: {playerManager.levelWeapon[number]}";
 
         textCost.text = $"<sprite=2>{playerManager.Reduction_0(playerManager.CostWeapon[number])}";
 
-        //отображение бара
+        //bar display
         scaleBar.x = (float)(1d / playerManager.BarMaxWeapon[number] * playerManager.BarWeapon[number]);
         if (scaleBar.x > 1f)
             scaleBar.x = 1f;

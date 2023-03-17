@@ -30,7 +30,7 @@ public class saveGame : MonoBehaviour
     public static string import_string = "";
 
 
-    //год мес€ц день час минута секунда
+    //year month day hour minute second
     public static int[] data_off = new int[] { 0, 0, 0, 0, 0, 0 };
     public static int[] data_off2 = new int[] { 0, 0, 0, 0, 0, 0 };
     public static int[] data_on = new int[] { 0, 0, 0, 0, 0, 0 };
@@ -279,7 +279,7 @@ public class saveGame : MonoBehaviour
 
         public int[] IngotUsed = new int[] { 0, 0, 0, 0, 0, };
 
-        //фрагменты
+        //fragments
         public int[] panelTypeWeapon = new int[] { 0, 0, 0, 0, 0, };
         public int panelFragmentWeapon = 0;
 

@@ -36,7 +36,7 @@ public class playerManager : MonoBehaviour
     public static float[] BarMaxWeapon = new float[] { 1f, 1f, 1f, 1f, 1f, };
     public static float[] BarMaxWeaponUp = new float[] { 1f, 1f, 1f, 1f, 1f, };
 
-    //����
+    //ore
     public static int oreAmount = 1;
     public static double[] costNewOre = new double[] { 1000d, 5000d, 15000d, 50000d };
     public static int[] levelOre = new int[] { 0, 0, 0, 0, 0, };
@@ -56,7 +56,7 @@ public class playerManager : MonoBehaviour
     public static float[] BarMaxOre = new float[] { 1f, 1f, 1f, 1f, 1f, };
     public static float[] BarMaxOreUp = new float[] { 1f, 1f, 1f, 1f, 1f, };
 
-    //������
+    //ingots
 
     public static int IngotAmount = 1;
     public static double[] costNewIngot = new double[] { 1000d, 5000d, 15000d, 50000d };
@@ -90,19 +90,19 @@ public class playerManager : MonoBehaviour
     public static double[] IngotUsedIncome = new double[] { 0, 0, 0, 0, 0, };
     public static int[] IngotUsed = new int[] { 0, 0, 0, 0, 0, };
 
-    //�������
+    //prestige
     public static double prestigePointsCurrent;
     public static double prestigePointsInProgress;
 
-    //���������
+    //weapons
     public static int[] panelTypeWeapon = new int[] { 0, 0, 0, 0, 0, };
     public static int panelFragmentWeapon = 0;
 
     public static int[,,] SlotUsed = new int[,,] { { { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, } }, { { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, } }, { { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, } }, { { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, } }, { { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, } }, };
     public static double[,] SlotUsedIncome = new double[,] { { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, }, { 0, 0, 0, }, };
 
-    //��� �����
-    //0-�� �������� 1-�������� 2-�����������
+    
+    //0-inactive 1-active 
     public static int[,,] fragnetOn = new int[,,] {
         { { 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, }, { 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, }, { 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, }, },
         { { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, }, { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, }, { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, }, },
@@ -121,7 +121,7 @@ public class playerManager : MonoBehaviour
 
 
 
-    //������
+    //quests
     public static int questAmount = 51;
     public static int questAmountOn = 0;
     public static int[] questSlot = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, };
@@ -133,7 +133,7 @@ public class playerManager : MonoBehaviour
     public static double[] questProgressNeed = new double[] { 25, 25, 25, 50, 50, 50, 100, 125, 150, 175, 200, 225, 250, 275, 300, 100, 125, 150, 175, 200, 225, 250, 275, 300, 25, 25, 25, 25, 25, 25, 100, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, };
     public static double[] questProgressPerLevel = new double[] { 25, 25, 25, 50, 50, 50, 100, 125, 150, 175, 200, 225, 250, 275, 300, 100, 125, 150, 175, 200, 225, 250, 275, 300, 25, 25, 25, 25, 25, 25, 100, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, 25, };
 
-    //�������������� �������
+    
     public static double[] questProp = new double[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, };
     public static double[] questPropPer = new double[] { 25, 25, 25, 0, 0, 0, 0, 50, 100, 150, 200, 250, 300, 350, 400, 0, 50, 100, 150, 200, 250, 300, 350, 400, 25, 25, 25, 25, 25, 25, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, 50, };
 
@@ -141,7 +141,7 @@ public class playerManager : MonoBehaviour
 
 
 
-    //��������
+    //upgrades
     public static int upgradeAmount = 32;
     public static int upgradeAmountOn = 0;
     public static int[] upgradeSlot = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, };
@@ -228,7 +228,7 @@ public class playerManager : MonoBehaviour
                             UpdateUpgrade();
                         }
                     }
-                    //������ 24-29
+                    //slots 24-29
                     for (int q = 24; q <= 29; q++)
                     {
                         if (questOn[q] > 0 && questLevel[q] < questLevelMax[q] && levelWeapon[i] >= questProp[q] && panelTypeWeapon[i] == q - 24)
@@ -248,7 +248,7 @@ public class playerManager : MonoBehaviour
                             }
                         }
                     }
-                    //����� 30
+                    //slot 30
                     if (questOn[30] > 0 && questLevel[30] < questLevelMax[30] && levelWeapon[i] >= questProp[30])
                     {
                         questProgress[30] += 1;
@@ -269,7 +269,7 @@ public class playerManager : MonoBehaviour
                 }
             }
         }
-        //������ ������ ����
+        //ore
         for (int i = 0; i < oreAmount; i++)
         {
             if (levelOre[i] > 0)
@@ -281,7 +281,7 @@ public class playerManager : MonoBehaviour
                     ore += incomeOre[i];
                     oreTotal += incomeWeapon[i];
 
-                    //����� 0
+                    //slot 0
                     if (questOn[0] > 0 && questLevel[0] < questLevelMax[0] && levelOre[i] >= questProp[0])
                     {
                         questProgress[0] += 1;
@@ -295,7 +295,7 @@ public class playerManager : MonoBehaviour
                             UpdateUpgrade();
                         }
                     }
-                    //������ 6-14
+                    //slots 6-14
                     for (int q = 6; q <= 14; q++)
                     {
                         if (questOn[q] > 0 && questLevel[q] < questLevelMax[q] && levelOre[i] >= questProp[q] && oreUsed[i] == q - 6)
@@ -314,7 +314,7 @@ public class playerManager : MonoBehaviour
                             }
                         }
                     }
-                    //������ 31-40
+                    //slots 31-40
                     for (int q = 31; q <= 40; q++)
                     {
                         if (questOn[q] > 0 && questLevel[q] < questLevelMax[q] && levelOre[i] >= questProp[q] && oreUsed[i] == q - 31)
@@ -335,7 +335,7 @@ public class playerManager : MonoBehaviour
                 }
             }
         }
-        //������ ������ �������
+        //ingots
         for (int i = 0; i < IngotAmount; i++)
         {
             if (levelIngot[i] > 0)
@@ -346,7 +346,7 @@ public class playerManager : MonoBehaviour
                     BarIngot[i] = 0f;
                     ingot += incomeIngot[i];
                     ingotTotal += incomeWeapon[i];
-                    //����� 1
+                    //slot 1
                     if (questOn[1] > 0 && questLevel[1] < questLevelMax[1] && levelIngot[i] >= questProp[1])
                     {
                         questProgress[1] += 1;
@@ -360,7 +360,7 @@ public class playerManager : MonoBehaviour
                             UpdateUpgrade();
                         }
                     }
-                    //������ 15-23
+                    //slots 15-23
                     for (int q = 15; q <= 23; q++)
                     {
                         if (questOn[q] > 0 && questLevel[q] < questLevelMax[q] && levelIngot[i] >= questProp[q] && IngotUsed[i] == q - 15)
@@ -379,7 +379,7 @@ public class playerManager : MonoBehaviour
                             }
                         }
                     }
-                    //������ 41-50
+                    //slots 41-50
                     for (int q = 41; q <= 50; q++)
                     {
                         if (questOn[q] > 0 && questLevel[q] < questLevelMax[q] && levelIngot[i] >= questProp[q] && IngotUsed[i] == q - 41)
@@ -401,7 +401,7 @@ public class playerManager : MonoBehaviour
             }
         }
 
-        // �������
+        // prestige
         prestigePointsInProgress = Math.Floor(Math.Pow((moneyTotal + oreTotal + ingotTotal) / 3 / 10000000d, 1d / 1.01d));
 
 
@@ -414,32 +414,32 @@ public class playerManager : MonoBehaviour
     {
         for(int i = 0; i < weaponAmount; i++)
         {
-            //����������� � �������
+            
             XBuyWeapon[i] = xBuy;
 
-            //����
+            
             CostWeapon[i] = CostStartWeapon[i] * Math.Pow(CostMnojWeapon[i], levelWeapon[i]);
             CostWeapon[i] = (Math.Pow(CostMnojWeapon[i], XBuyWeapon[i]) - 1d) / (CostMnojWeapon[i] - 1d) * CostWeapon[i];
-            //�������
+            
             if (upgradeLevel[5] > 0)
             {
                 CostWeapon[i] *= 1d * Math.Pow(0.9d, upgradeLevel[5]);
             }
             CostWeapon[i] = Math.Round(CostWeapon[i]);
 
-            //�����
+            
             incomeWeapon[i] = incomePerLevelWeapon[i] * levelWeapon[i];
             incomeWeaponUp[i] = incomePerLevelWeapon[i] * (levelWeapon[i] + XBuyWeapon[i]);
-            //�2 ������ 25 �������
+            
             incomeWeapon[i] = incomeWeapon[i] * Math.Pow(2d, levelWeapon[i] / 25);
             incomeWeaponUp[i] = incomeWeaponUp[i] * Math.Pow(2d, (levelWeapon[i] + XBuyWeapon[i]) / 25);
-            //���������
+            //income
             SlotUsedIncome[i, 0] = SlotUsed[i, panelTypeWeapon[i], 0] * 0.1d;
             SlotUsedIncome[i, 1] = SlotUsed[i, panelTypeWeapon[i], 1] * 0.1d;
             SlotUsedIncome[i, 2] = SlotUsed[i, panelTypeWeapon[i], 2] * 0.1d;
             incomeWeapon[i] *= 1d + SlotUsedIncome[i, 0] + SlotUsedIncome[i, 1] + SlotUsedIncome[i, 2];
             incomeWeaponUp[i] *= 1d + SlotUsedIncome[i, 0] + SlotUsedIncome[i, 1] + SlotUsedIncome[i, 2];
-            //��������
+            //weapons
             if (upgradeLevel[2] > 0)
             {
                 incomeWeapon[i] *= Math.Pow(2d, upgradeLevel[2]);
@@ -447,10 +447,10 @@ public class playerManager : MonoBehaviour
             }
 
 
-            //��������
+            
             SpeedWeapon[i] = 1f;
             SpeedWeaponUp[i] = 1f;
-            //�������
+            
             for (int i2 = 0; i2 < 6; i2++)
             {
                 if (upgradeLevel[26 + i2] > 0)
@@ -462,7 +462,7 @@ public class playerManager : MonoBehaviour
 
 
 
-            //���
+            //bar
             BarMaxWeapon[i] = 1f;
             BarMaxWeaponUp[i] = 1f;
             BarMaxWeapon[i] = BarMaxWeapon[i] * Mathf.Pow(1.2f, levelWeapon[i] / 25);
@@ -475,43 +475,43 @@ public class playerManager : MonoBehaviour
     {
         for (int i = 0; i < oreAmount; i++)
         {
-            //����������� � �������
+            
             XBuyOre[i] = xBuy;
 
-            //����
+            //ore
             CostOre[i] = CostStartOre[i] * Math.Pow(CostMnojOre[i], levelOre[i]);
             CostOre[i] = (Math.Pow(CostMnojOre[i], XBuyOre[i]) - 1d) / (CostMnojOre[i] - 1d) * CostOre[i];
-            //�������
+            //upgrade
             if (upgradeLevel[3] > 0)
             {
                 CostOre[i] *= 1d * Math.Pow(0.9d, upgradeLevel[3]);
             }
             CostOre[i] = Math.Round(CostOre[i]);
-            //���� ������
+            
             if (i == 0 && levelOre[i] == 0)
                 CostOre[i] = 0;
 
-            //�����
+            
             incomeOre[i] = incomePerLevelOre[i] * levelOre[i];
             incomeOreUp[i] = incomePerLevelOre[i] * (levelOre[i] + XBuyOre[i]);
-            //�2 ������ 25 �������
+            
             incomeOre[i] = incomeOre[i] * Math.Pow(2d, levelOre[i] / 25);
             incomeOreUp[i] = incomeOreUp[i] * Math.Pow(2d, (levelOre[i] + XBuyOre[i]) / 25);
-            //���������
+            
             oreUsedIncome[i] = oreUsed[i] * 0.1d;
             incomeOre[i] *= 1d + oreUsedIncome[i];
             incomeOreUp[i] *= 1d + oreUsedIncome[i];
-            //��������
+            
             if(upgradeLevel[0] > 0)
             {
                 incomeOre[i] *= Math.Pow(2d, upgradeLevel[0]);
                 incomeOreUp[i] *= Math.Pow(2d, upgradeLevel[0]);
             }
 
-            //��������
+            
             SpeedOre[i] = 1f;
             SpeedOreUp[i] = 1f;
-            //�������
+            
             for(int i2 = 0; i2 < 10; i2++)
             {
                 if (upgradeLevel[6 + i2] > 0)
@@ -523,7 +523,7 @@ public class playerManager : MonoBehaviour
             
 
 
-            //���
+            //ore bar
             BarMaxOre[i] = 1f;
             BarMaxOreUp[i] = 1f;
             BarMaxOre[i] = BarMaxOre[i] * Mathf.Pow(1.2f, levelOre[i] / 25);
@@ -536,30 +536,30 @@ public class playerManager : MonoBehaviour
     {
         for (int i = 0; i < IngotAmount; i++)
         {
-            //����������� � �������
+            
             XBuyIngot[i] = xBuy;
 
-            //����
+            //costs
             CostIngot[i] = CostStartIngot[i] * Math.Pow(CostMnojIngot[i], levelIngot[i]);
             CostIngot[i] = (Math.Pow(CostMnojIngot[i], XBuyIngot[i]) - 1d) / (CostMnojIngot[i] - 1d) * CostIngot[i];
-            //�������
+            
             if (upgradeLevel[4] > 0)
             {
                 CostIngot[i] *= 1d * Math.Pow(0.9d, upgradeLevel[4]);
             }
             CostIngot[i] = Math.Round(CostIngot[i]);
 
-            //�����
+            //income
             incomeIngot[i] = incomePerLevelIngot[i] * levelIngot[i];
             incomeIngotUp[i] = incomePerLevelIngot[i] * (levelIngot[i] + XBuyIngot[i]);
-            //�2 ������ 25 �������
+            
             incomeIngot[i] = incomeIngot[i] * Math.Pow(2d, levelIngot[i] / 25);
             incomeIngotUp[i] = incomeIngotUp[i] * Math.Pow(2d, (levelIngot[i] + XBuyIngot[i]) / 25);
-            //���������
+            
             IngotUsedIncome[i] = IngotUsed[i] * 0.1d;
             incomeIngot[i] *= 1d + IngotUsedIncome[i];
             incomeIngotUp[i] *= 1d + IngotUsedIncome[i];
-            //��������
+            
             if (upgradeLevel[1] > 0)
             {
                 incomeIngot[i] *= Math.Pow(2d, upgradeLevel[1]);
@@ -567,10 +567,10 @@ public class playerManager : MonoBehaviour
             }
 
 
-            //��������
+            
             SpeedIngot[i] = 1f;
             SpeedIngotUp[i] = 1f;
-            //�������
+            
             for (int i2 = 0; i2 < 10; i2++)
             {
                 if (upgradeLevel[16 + i2] > 0)
@@ -582,7 +582,7 @@ public class playerManager : MonoBehaviour
 
 
 
-            //���
+            //bar
             BarMaxIngot[i] = 1f;
             BarMaxIngotUp[i] = 1f;
             BarMaxIngot[i] = BarMaxIngot[i] * Mathf.Pow(1.2f, levelIngot[i] / 25);
@@ -593,20 +593,20 @@ public class playerManager : MonoBehaviour
 
 
 
-    //�����
+    
     public static void UpdateQuest()
     {
 
-        //��������������� �������
+        
         for(int i = 0; i < questAmount; i++)
         {
             questProp[i] = questPropPer[i] * questLevel[i];
-            //��� �������� ����� �������� ���� � �������
+            
             if (i >= 6 && i <= 23)
                 questProp[i] = questPropPer[i];
         }
 
-        //���������� ������� �����������
+        
         questAmountOn = 0;
         for (int i = 0; i < questAmount; i++)
         {
@@ -617,7 +617,7 @@ public class playerManager : MonoBehaviour
             }
         }
 
-        //����������� �������� ���� �������
+        
         for(int i = 0; i < questAmount; i++)
         {
             questProgressNeed[i] = questProgressPerLevel[i] + questProgressPerLevel[i] * questLevel[i];
@@ -631,11 +631,11 @@ public class playerManager : MonoBehaviour
     }
 
 
-    //��������
+    
     public static void UpdateUpgrade()
     {
 
-        //����
+        
         for (int i = 0; i < upgradeAmount; i++)
         {
             upgradeCost[i] = upgradeCostStart[i] * Math.Pow(upgradeCostMnoj[i], upgradeLevel[i]);
@@ -647,7 +647,7 @@ public class playerManager : MonoBehaviour
             upgradeSlot[i] = -1;
             upgradeSlotSort[i] = -1;
         }
-        //���������� ��������� �����������
+        
         upgradeAmountOn = 0;
         for (int i = 0; i < upgradeAmount; i++)
         {
@@ -657,7 +657,7 @@ public class playerManager : MonoBehaviour
                 upgradeAmountOn += 1;
             }
         }
-        //�������������� �� ����
+        
         Array.Sort(upgradeCostSort, upgradeSlot, 0, upgradeAmountOn);
 
 
@@ -667,7 +667,7 @@ public class playerManager : MonoBehaviour
 
 
 
-    //����������� ������
+    
     #region
     public static string Sign(double sign1, double sign2)
     {
@@ -721,7 +721,7 @@ public class playerManager : MonoBehaviour
     }
     #endregion
 
-    //��������� ����������
+    
     #region
     public static string Timer00(float timer)
     {
@@ -741,7 +741,7 @@ public class playerManager : MonoBehaviour
     }
     #endregion
 
-    //���������� �����
+    
     #region
     public static int notation = 0;
 

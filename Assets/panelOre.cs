@@ -28,13 +28,13 @@ public class panelOre : MonoBehaviour
     void FixedUpdate()
     {
 
-        //отоброжение уровня
+        //level display
         textIncome.text = $"<sprite=1>{playerManager.Reduction_0(playerManager.incomeOre[number])}";
         textLevel.text = $"Level: {playerManager.levelOre[number]}";
 
         textCost.text = $"<sprite=0>{playerManager.Reduction_0(playerManager.CostOre[number])}";
 
-        //отображение бара
+        //bar display
         scaleBar.x = (float)(1d / playerManager.BarMaxOre[number] * playerManager.BarOre[number]);
         if (scaleBar.x > 1f)
             scaleBar.x = 1f;
